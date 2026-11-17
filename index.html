@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Jet Jam</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+    }
+    h1 { margin-top: 0; color: var(--ink); font-size: 1.9rem; }
+    h2 { margin-top: 2rem; color: var(--ink); font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    p, li { color: var(--muted); }
+    strong { color: var(--ink); }
+    .meta {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f1f5f9; color: var(--ink); }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Jet Jam</h1>
+    <div class="meta">
+      <div><strong>Effective Date:</strong> 18 November 2026</div>
+      <div><strong>Game Title:</strong> Jet Jam (<code>com.hunainx.jetjam</code>)</div>
+      <div><strong>Developer / Data Controller:</strong> Hunain Ahmed (Individual Developer, India)</div>
+      <div><strong>Deletion &amp; Privacy Request Contact:</strong> <a href="mailto:hunainibnshakeel@gmail.com">hunainibnshakeel@gmail.com</a></div>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>
+      <strong>Jet Jam</strong> (<code>com.hunainx.jetjam</code>) is a single-player mobile puzzle game. Your level progress, coins, stars, airport upgrades, and settings are saved locally on your device. We do not require an account and we do not collect your name, email address, phone number, contacts, precise GPS location, camera, or microphone data.
+    </p>
+    <p>
+      We integrate third-party SDKs (Google Mobile Ads / AdMob, Google User Messaging Platform, Firebase Analytics &amp; Crashlytics, and Unity In-App Purchasing with Google Play Billing) to serve ads, manage consent, process optional in-app purchases, and collect pseudonymous gameplay analytics and crash diagnostics after consent.
+    </p>
+
+    <h2>2. Data Collected by SDKs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Component / SDK</th>
+          <th>Data Collected</th>
+          <th>Purpose</th>
+          <th>Control / Legal Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Local Save &amp; Notifications</strong><br/>(On-device)</td>
+          <td>Level progress, coins, stars, settings, local reminder schedule</td>
+          <td>Core single-player gameplay and optional daily reminders</td>
+          <td>Stored locally on device; clear via <em>Settings &rarr; Reset Progress</em> or uninstall</td>
+        </tr>
+        <tr>
+          <td><strong>Google User Messaging Platform (UMP)</strong></td>
+          <td>Consent choices, IAB TCF / regional consent string, IP address (for region detection)</td>
+          <td>Presenting and storing your privacy &amp; ad consent preferences</td>
+          <td>Re-open anytime where applicable via <em>Settings &rarr; Privacy options</em></td>
+        </tr>
+        <tr>
+          <td><strong>Google Mobile Ads (AdMob)</strong></td>
+          <td>Advertising ID (GAID/IDFA), IP address (coarse region), device model &amp; OS, ad impressions/clicks/rewarded completions, diagnostics</td>
+          <td>Serving optional rewarded ads and between-level interstitial ads; fraud prevention; frequency caps</td>
+          <td>Initialised only after UMP consent flow; requests non-personalised ads (<code>npa=1</code>) if personalised ads consent is declined</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase Analytics</strong></td>
+          <td>Pseudonymous App-Instance ID, coarse location from IP, device/OS metadata, gameplay events (<code>level_start</code>, <code>level_end</code>, <code>booster_use</code>, <code>rescue_accept</code>, <code>economy_earn</code>, <code>economy_spend</code>)</td>
+          <td>Balancing puzzle difficulty, progression pacing, and stability</td>
+          <td>Initialised <strong>only after</strong> consent is granted</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase Crashlytics</strong></td>
+          <td>Crash stack traces, non-fatal level defect logs (<code>level_defect</code>), Crashlytics Installation UUID, device model, OS version</td>
+          <td>Diagnosing crashes and fixing defective levels</td>
+          <td>Initialised <strong>only after</strong> consent is granted</td>
+        </tr>
+        <tr>
+          <td><strong>Unity IAP (Google Play Billing)</strong></td>
+          <td>Purchased product IDs (<code>aj.starter_pack</code>, <code>aj.coins_300..9000</code>, <code>aj.booster_bundle</code>, <code>aj.remove_ads</code>), transaction ID, receipt signature</td>
+          <td>Fulfilling optional purchases, local receipt validation, and restoring non-consumable purchases</td>
+          <td>User-initiated purchase contract; payment credentials are handled solely by Google Play</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Managing Your Consent &amp; Choices</h2>
+    <ul>
+      <li><strong>In-App Consent Manager:</strong> On first launch in applicable regions, a UMP consent screen is shown before any ad request or analytics initialization. You can update your choice anytime at <strong>Settings &rarr; Privacy options</strong>.</li>
+      <li><strong>Android Advertising ID:</strong> You may reset or delete your Advertising ID in your device settings under <strong>Settings &rarr; Privacy &rarr; Ads</strong>.</li>
+    </ul>
+
+    <h2>4. Target Audience &amp; Children's Privacy</h2>
+    <p>
+      <strong>Jet Jam</strong> is intended for players aged <strong>13 and older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided data without parental consent, contact us at <a href="mailto:hunainibnshakeel@gmail.com">hunainibnshakeel@gmail.com</a> for prompt deletion.
+    </p>
+
+    <h2>5. Data Retention &amp; Deletion Requests</h2>
+    <p>
+      You can delete all local game data immediately using <strong>Settings &rarr; Reset Progress</strong> or by uninstalling the app. To request deletion of pseudonymous analytics or crash records held by our service providers, email <a href="mailto:hunainibnshakeel@gmail.com">hunainibnshakeel@gmail.com</a> with the subject <code>Jet Jam — Data Deletion Request</code>.
+    </p>
+
+    <h2>6. Third-Party Policies &amp; Contact</h2>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy (AdMob, UMP, Firebase, Google Play)</a></li>
+      <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
+    </ul>
+    <p>
+      <strong>Contact (Email Only):</strong> Hunain Ahmed (Individual Developer, India) &middot; <a href="mailto:hunainibnshakeel@gmail.com">hunainibnshakeel@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
